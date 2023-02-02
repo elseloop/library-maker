@@ -1,38 +1,51 @@
 .App {
+  height: 100%;
+}
+
+.nav--main {
+  margin-top: 2rem;
+}
+
+.table--books {
+  margin: 2rem auto 5rem;
+  width: 100%;
+}
+
+.table--books .MuiTableHead-root th {
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  position: sticky;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.MuiTableBody-root .MuiTableRow-root:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.MuiTableBody-root .MuiTableRow-root:nth-child(odd):hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.image-capture {
+  margin: 0 auto;
+  max-width: 80vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.photo {
+  border: 2px solid #666;
+  border-radius: 2rem;
+  display: block;
+  margin: 0 auto;
+  max-height: 60vh;
+  width: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 250px;
+  opacity: 0;
 }
