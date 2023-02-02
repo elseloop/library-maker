@@ -119,7 +119,7 @@ export default function ImageCapture({setTableData, tableData}) {
               console.error('Barcode detection failed:', err);
             }
           });
-      }else {
+      } else {
         alert('Barcode Detector is not supported in your browser. 😔');
       }
     }
